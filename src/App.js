@@ -133,6 +133,7 @@ const features = [
 
 function App() {
   return (
+    // Start of the hero section for the website
 <div className="relative bg-white overflow-hidden">
       <div className="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
         <svg
@@ -199,6 +200,12 @@ function App() {
                   Log in
                 </a>
               </span>
+              <a
+                href="#"
+                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+              >
+                Sign up
+              </a>
             </div>
           </nav>
 
@@ -261,41 +268,33 @@ function App() {
                   Coming soon
                 </span>
                 <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
-                  <span className="block text-gray-900">Data to enrich your</span>
-                  <span className="block text-indigo-600">online business</span>
+                  <span className="block text-gray-900">Next-Gen WordPress</span>
+                  <span className="block text-indigo-600">Cloud Hosting</span>
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat fugiat aliqua ad ad non deserunt sunt.
+              Kickstart your first Business website with Cloud SSD Storage. LiteSpeed powered server with the best performance & speed.
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                <p className="text-base font-medium text-gray-900">Sign up to get notified when it’s ready.</p>
+                <p className="text-base font-medium text-gray-900">Find Your Perfect Domain Name</p>
                 <form action="#" method="POST" className="mt-3 sm:flex">
-                  <label htmlFor="email" className="sr-only">
-                    Email
+                  <label htmlFor="search" className="sr-only">
+                  search
                   </label>
                   <input
-                    type="email"
-                    name="email"
-                    id="email"
+                    type="search"
+                    name="search"
+                    id="search"
                     className="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300"
-                    placeholder="Enter your email"
+                    placeholder="Enter your domain name"
                   />
                   <button
                     type="submit"
                     className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
-                    Notify me
+                    Search Domain
                   </button>
                 </form>
-                <p className="mt-3 text-sm text-gray-500">
-                  We care about the protection of your data. Read our
-                  <a href="#" className="font-medium text-gray-900 underline">
-                    Privacy Policy
-                  </a>
-                  .
-                </p>
               </div>
             </div>
             <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
@@ -345,35 +344,9 @@ function App() {
           </div>
         </main>
       </div>
-      <div className="bg-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-          <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
-          </div>
-          <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
-          </div>
-          <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <img className="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
-          </div>
-          <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-            <img
-              className="h-12"
-              src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-              alt="Transistor"
-            />
-          </div>
-          <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-            <img
-              className="h-12"
-              src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-              alt="Workcation"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+      
+      {/* End of Hero Section of the website */}
+
     <div className="relative bg-white py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="text-base font-semibold tracking-wider text-indigo-600 uppercase">Deploy faster</h2>
