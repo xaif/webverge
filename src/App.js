@@ -264,9 +264,6 @@ function App() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
               <h1>
-                <span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
-                  Coming soon
-                </span>
                 <span className="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
                   <span className="block text-gray-900">Next-Gen WordPress</span>
                   <span className="block text-indigo-600">Cloud Hosting</span>
@@ -277,17 +274,20 @@ function App() {
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <p className="text-base font-medium text-gray-900">Find Your Perfect Domain Name</p>
-                <form action="#" method="POST" className="mt-3 sm:flex">
-                  <label htmlFor="search" className="sr-only">
-                  search
+                <form action="https://account.webverge.io/cart.php" method="GET" target="_blank" className="mt-3 sm:flex">
+                  <label htmlFor="text" className="sr-only">
+                  text
                   </label>
-                  <input
-                    type="search"
-                    name="search"
-                    id="search"
+                  <input                  
+                    type="text"
+                    name="query"   
+                    required="true"
+                    id="text"
                     className="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300"
                     placeholder="Enter your domain name"
                   />
+                    <input type="hidden" name="a" value="add" />
+                    <input type="hidden" name="domain" value="register" ></input>
                   <button
                     type="submit"
                     className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
