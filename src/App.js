@@ -6,14 +6,32 @@ import { CheckIcon } from '@heroicons/react/outline'
 import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/outline'
 
+// Adding Footer Code
+
 const footer = {
-  main: [
+  solutions: [
+    { name: 'Marketing', href: 'https://iide.co' },
+    { name: 'Analytics', href: '#' },
+    { name: 'Commerce', href: '#' },
+    { name: 'Insights', href: '#' },
+  ],
+  support: [
+    { name: 'Pricing', href: '#' },
+    { name: 'Documentation', href: '#' },
+    { name: 'Guides', href: '#' },
+    { name: 'API Status', href: '#' },
+  ],
+  company: [
     { name: 'About', href: '#' },
     { name: 'Blog', href: '#' },
     { name: 'Jobs', href: '#' },
     { name: 'Press', href: '#' },
-    { name: 'Accessibility', href: '#' },
     { name: 'Partners', href: '#' },
+  ],
+  legal: [
+    { name: 'Claim', href: '#' },
+    { name: 'Privacy', href: '#' },
+    { name: 'Terms', href: '#' },
   ],
   social: [
     {
@@ -168,7 +186,7 @@ function App() {
           >
             <div className="flex items-center flex-1">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
+                <a href="https://webverge.io/">
                   <span className="sr-only">Workflow</span>
                   <img
                     className="h-8 w-auto sm:h-10"
@@ -194,14 +212,14 @@ function App() {
             <div className="hidden md:block text-right">
               <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                 <a
-                  href="#"
+                  href="https://account.webverge.io/login"
                   className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
                 >
                   Log in
                 </a>
               </span>
               <a
-                href="#"
+                href="https://account.webverge.io/register.php"
                 className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
               >
                 Sign up
@@ -250,7 +268,7 @@ function App() {
                   ))}
                 </div>
                 <a
-                  href="#"
+                  href="https://account.webverge.io/login"
                   className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
                 >
                   Log in
@@ -615,26 +633,89 @@ function App() {
         </div>
       </div>
     </div>
-    <footer className="bg-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-        <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
-          {footer.main.map((item) => (
-            <div key={item.name} className="px-5 py-2">
-              <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
-                {item.name}
-              </a>
+   {/* Adding footer code on the website */}
+   <footer className="bg-white" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" className="sr-only">
+        Footer
+      </h2>
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div className="space-y-8 xl:col-span-1">
+            <img
+              className="h-10"
+              src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
+              alt="Company name"
+            />
+            <p className="text-gray-500 text-base">
+              Making the world a better place through constructing elegant hierarchies.
+            </p>
+            <div className="flex space-x-6">
+              {footer.social.map((item) => (
+                <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+                  <span className="sr-only">{item.name}</span>
+                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                </a>
+              ))}
             </div>
-          ))}
-        </nav>
-        <div className="mt-8 flex justify-center space-x-6">
-          {footer.social.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
+          </div>
+          <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Solutions</h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  {footer.solutions.map((item) => (
+                    <li key={item.name}>
+                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-12 md:mt-0">
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Support</h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  {footer.support.map((item) => (
+                    <li key={item.name}>
+                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  {footer.company.map((item) => (
+                    <li key={item.name}>
+                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="mt-12 md:mt-0">
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  {footer.legal.map((item) => (
+                    <li key={item.name}>
+                      <a href={item.href} className="text-base text-gray-500 hover:text-gray-900">
+                        {item.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <p className="mt-8 text-center text-base text-gray-400">&copy; 2022 WebVerge, Inc. All rights reserved.</p>
+        <div className="mt-12 border-t border-gray-200 pt-8">
+          <p className="text-base text-gray-400 xl:text-center">&copy; 2022 WebVerge, Inc. All rights reserved.</p>
+        </div>
       </div>
     </footer>
     </div>
