@@ -8,7 +8,7 @@ import { ChevronDownIcon } from '@heroicons/react/outline'
 
 const footer = {
   main: [
-    { name: 'About', href: '#' },
+    { name: 'About', href: '/About.js' },
     { name: 'Blog', href: '#' },
     { name: 'Jobs', href: '#' },
     { name: 'Press', href: '#' },
@@ -18,7 +18,7 @@ const footer = {
   social: [
     {
       name: 'Facebook',
-      href: 'https://facebook.com/',
+      href: '',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -197,7 +197,7 @@ function About() {
                   href="components/about.js"
                   className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
                 >
-                  Log in
+                  Log innnnnnnnnnnnnnnnnnnnnnnn
                 </a>
               </span>
               <a
@@ -638,10 +638,11 @@ function About() {
       </div>
     </footer>
     </div>
-    
 
   );
 }
+
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
