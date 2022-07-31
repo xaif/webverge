@@ -80,7 +80,7 @@ export default function Hero() {
                   </a>
                 </span>
                 <a
-                  href="#"
+                  href="/contact"
                   className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                 >
                   Sign up
@@ -133,6 +133,12 @@ export default function Hero() {
                     className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
                   >
                     Log in
+                  </a>
+                  <a
+                    href="#"
+                    className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                  >
+                    Sign Up
                   </a>
                 </div>
               </Popover.Panel>
@@ -224,4 +230,4 @@ export default function Hero() {
 </div>
 </div>
 );
-                    }
+}
