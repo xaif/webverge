@@ -8,6 +8,7 @@ const navigation = [
   { name: "Features", href: "#" },
   { name: "Marketplace", href: "#" },
   { name: "Company", href: "#" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Hero() {
