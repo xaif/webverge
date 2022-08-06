@@ -1,25 +1,24 @@
-import {CloudUploadIcon, CogIcon, LockClosedIcon, RefreshIcon, ServerIcon, ShieldCheckIcon} from '@heroicons/react/outline'
+import { TrendingUpIcon, LockClosedIcon, ServerIcon, ShieldCheckIcon, SupportIcon, LightningBoltIcon} from '@heroicons/react/outline'
 
 const features = [
-    { name: 'Push to Deploy', icon: CloudUploadIcon },
-    { name: 'SSL Certificates', icon: LockClosedIcon },
-    { name: 'Simple Queues', icon: RefreshIcon },
-    { name: 'Advanced Security', icon: ShieldCheckIcon },
-    { name: 'Powerful API', icon: CogIcon },
-    { name: 'Database Backups', icon: ServerIcon },
+    { name: 'LiteSpeed Servers', desc: 'We’re using LiteSpeed servers which helps you to get a super-fast website. It helps you cache and optimizes the site', icon: ServerIcon },
+    { name: 'Optimised WordPress', desc: 'We understand it’s difficult to optimise your site. When you will install WordPress it will come with baked in optimization', icon: TrendingUpIcon },
+    { name: 'Free SSL Certificate', desc: 'No need to spend extra on SSL certificates because we at WebVerge give you SSL for free. We think of your privacy first', icon: LockClosedIcon },
+    { name: 'Advanced Security', desc:'We help you with free image CDN which can help you to optimize all the images & dynamically change images in webp format', icon: ShieldCheckIcon },
+    { name: 'Uptime Guaranteed', desc:'We know it is irritating to see your website go down. We understand your business needs and that is why we provide 99.9% uptime', icon: LightningBoltIcon },
+    { name: 'Great Support', desc:'Sometimes setting up your website may take time to understand. You can always create a support ticket & we will help you', icon: SupportIcon },
   ]
 
 export default function Features () {
 return (
-<div className="relative bg-white py-16 sm:py-24 lg:py-32">
+<div className="relative bg-gray-50 py-16 sm:py-24 lg:py-32">
 <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-  <h2 className="text-base font-semibold tracking-wider text-indigo-600 uppercase">Deploy faster</h2>
   <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-    Everything you need to deploy your app
+  Innovative Cloud Infrastructure
   </p>
   <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-    Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
-    malesuada. Eleifend condimentum id viverra nulla.
+  We know setting up your first website may take a while. At WebVerge you can easily buy domain and hosting in just some few clicks. 
+
   </p>
   <div className="mt-12">
     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -34,7 +33,7 @@ return (
               </div>
               <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">{feature.name}</h3>
               <p className="mt-5 text-base text-gray-500">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+              {feature.desc}
               </p>
             </div>
           </div>
