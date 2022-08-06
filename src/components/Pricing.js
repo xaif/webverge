@@ -1,15 +1,19 @@
 import { CheckIcon } from '@heroicons/react/outline'
 
 
-const hobbyFeatures = ['Pariatur quod similique', 'Sapiente libero doloribus', 'Vel ipsa esse repudiandae']
-const scaleFeatures = ['Pariatur quod similique', 'Sapiente libero doloribus', 'Vel ipsa esse repudiandae']
-const growthFeatures = [
-  'Quia rem est sed impedit magnam',
-  'Dolorem vero ratione voluptates',
-  'Qui sed ab doloribus voluptatem dolore',
-  'Laborum commodi molestiae id et fugiat',
-  'Nam ut ipsa nesciunt culpa modi dolor',
+const starterFeatures = ['Powered By LiteSpeed', '1 Website', '3 GB SSD Storage','20 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates']
+const growthFeatures = ['Powered By LiteSpeed', '3 Website', '8 GB SSD Storage','60 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates']
+const agencyFeatures = ['Powered By LiteSpeed', '10 Website', '12 GB SSD Storage','100 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates']
+
+const plans = [
+  {
+    StarterPlan: "2799",
+    GrowthPlan: "4999",
+    AgencyPlan: "7999"
+  }
 ]
+
+
 
 export default function Pricing () {
     return (
@@ -17,12 +21,13 @@ export default function Pricing () {
         <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
           <div className="text-center">
             <h2 className="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">Pricing</h2>
+
             <p className="mt-2 text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
               The right price for you, whoever you are
             </p>
-            <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus
-              molestiae voluptatum.
+            <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-xl">
+            We provide the best Cloud Infrastructure which will help you to manage any kind of website. 
+            We know what is best for you and that is the reason we focus on security & speed.
             </p>
           </div>
         </div>
@@ -51,7 +56,7 @@ export default function Pricing () {
                       </div>
                       <div className="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                         <ul role="list" className="space-y-4">
-                          {hobbyFeatures.map((feature) => (
+                          {starterFeatures.map((feature) => (
                             <li key={feature} className="flex items-start">
                               <div className="flex-shrink-0">
                                 <CheckIcon className="flex-shrink-0 h-6 w-6 text-green-500" aria-hidden="true" />
@@ -95,10 +100,10 @@ export default function Pricing () {
                         </h3>
                         <div className="mt-4 flex items-center justify-center">
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
-                            <span className="mt-2 mr-2 text-4xl font-medium">$</span>
-                            <span className="font-extrabold">149</span>
+                            <span className="mt-2 mr-2 text-4xl font-medium">₹</span>
+                            <span className="font-extrabold">4999</span>
                           </span>
-                          <span className="text-2xl font-medium text-gray-500">/month</span>
+                          <span className="text-2xl font-medium text-gray-500">/year</span>
                         </div>
                       </div>
                     </div>
@@ -132,21 +137,21 @@ export default function Pricing () {
                     <div className="flex-1 flex flex-col">
                       <div className="bg-white px-6 py-10">
                         <div>
-                          <h3 className="text-center text-2xl font-medium text-gray-900" id="tier-scale">
-                            Scale
+                          <h3 className="text-center text-2xl font-medium text-gray-900" id="tier-agency">
+                            Agency
                           </h3>
                           <div className="mt-4 flex items-center justify-center">
                             <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900">
-                              <span className="mt-2 mr-2 text-4xl font-medium">$</span>
-                              <span className="font-extrabold">349</span>
+                              <span className="mt-2 mr-2 text-4xl font-medium">₹</span>
+                              <span className="font-extrabold">7999</span>
                             </span>
-                            <span className="text-xl font-medium text-gray-500">/month</span>
+                            <span className="text-xl font-medium text-gray-500">/year</span>
                           </div>
                         </div>
                       </div>
                       <div className="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                         <ul role="list" className="space-y-4">
-                          {scaleFeatures.map((feature) => (
+                          {agencyFeatures.map((feature) => (
                             <li key={feature} className="flex items-start">
                               <div className="flex-shrink-0">
                                 <CheckIcon className="flex-shrink-0 h-6 w-6 text-green-500" aria-hidden="true" />
@@ -160,7 +165,7 @@ export default function Pricing () {
                             <a
                               href="#"
                               className="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
-                              aria-describedby="tier-scale"
+                              aria-describedby="tier-agency"
                             >
                               Start your trial
                             </a>
