@@ -5,6 +5,8 @@ import Pricing from "../components/Pricing";
 import Testimonial from "../components/Testimonial";
 import Logo from "../components/Logo";
 import Faq from "../components/Faq";
+import Stats from "../components/Stats";
+import Cta from "../components/Cta";
 
 
 const Home = () => {
@@ -14,8 +16,10 @@ const Home = () => {
       <Logo />
       <Features />
       <Pricing />
+      <Stats />
       <Testimonial />
       <Faq />
+      <Cta />
       {/* <Footer /> */}
     </>
   );
