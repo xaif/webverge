@@ -98,14 +98,14 @@ export default function Hero() {
             <div className="hidden md:block text-right">
               <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                 <a
-                  href="#"
+                  href="https://account.webverge.io/login"
                   className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
                 >
                   Log in
                 </a>
               </span>
               <a
-                href="#"
+                href="https://account.webverge.io/register"
                 className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
               >
                 Sign up
@@ -154,10 +154,16 @@ export default function Hero() {
                   ))}
                 </div>
                 <a
-                  href="#"
+                  href="https://account.webverge.io/login"
                   className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
                 >
                   Log in
+                </a>
+                <a
+                  href="https://account.webverge.io/register"
+                  className="block w-full px-5 py-3 text-center font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                >
+                  Sign up
                 </a>
               </div>
             </Popover.Panel>
