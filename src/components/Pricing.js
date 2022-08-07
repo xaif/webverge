@@ -5,16 +5,6 @@ const starterFeatures = ['Powered By LiteSpeed', '1 Website', '3 GB SSD Storage'
 const growthFeatures = ['Powered By LiteSpeed', '3 Website', '8 GB SSD Storage','60 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates']
 const agencyFeatures = ['Powered By LiteSpeed', '10 Website', '12 GB SSD Storage','100 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates']
 
-const plans = [
-  {
-    StarterPlan: "2799",
-    GrowthPlan: "4999",
-    AgencyPlan: "7999"
-  }
-]
-
-
-
 export default function Pricing () {
     return (
         <div className="bg-gray-900">
@@ -23,7 +13,7 @@ export default function Pricing () {
             <h2 className="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">Pricing</h2>
 
             <p className="mt-2 text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
-              The right price for you, whoever you are
+            Transparent Prices, No Surprises
             </p>
             <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-xl">
             We provide the best Cloud Infrastructure which will help you to manage any kind of website. 
@@ -68,11 +58,11 @@ export default function Pricing () {
                         <div className="mt-8">
                           <div className="rounded-lg shadow-md">
                             <a
-                              href="#"
+                              href="https://account.webverge.io/store/linux-web-shared-hosting/starter"
                               className="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
                               aria-describedby="tier-starter"
                             >
-                              Start your trial
+                              Get Started
                             </a>
                           </div>
                         </div>
@@ -121,11 +111,11 @@ export default function Pricing () {
                       <div className="mt-10">
                         <div className="rounded-lg shadow-md">
                           <a
-                            href="#"
+                            href="https://account.webverge.io/store/linux-web-shared-hosting/growth"
                             className="block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-700"
                             aria-describedby="tier-growth"
                           >
-                            Start your trial
+                            Get Started Now
                           </a>
                         </div>
                       </div>
@@ -163,11 +153,11 @@ export default function Pricing () {
                         <div className="mt-8">
                           <div className="rounded-lg shadow-md">
                             <a
-                              href="#"
+                              href="https://account.webverge.io/store/linux-web-shared-hosting/agency"
                               className="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
                               aria-describedby="tier-agency"
                             >
-                              Start your trial
+                              Get Started Now
                             </a>
                           </div>
                         </div>
@@ -181,4 +171,5 @@ export default function Pricing () {
         </div>
       </div>
     )
-                          }
+    
+  }

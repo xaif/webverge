@@ -14,10 +14,10 @@ return (
 <div className="relative bg-gray-50 py-16 sm:py-24 lg:py-32">
 <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
   <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-  Innovative Cloud Infrastructure
+  Built for Performance
   </p>
   <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-  We know setting up your first website may take a while. At WebVerge you can easily buy domain and hosting in just some few clicks. 
+  Every layer of WebVerge has been built with performance in mind. We’ll fine tune this even further to keep your WordPress website lightening fast under heavy load.
 
   </p>
   <div className="mt-12">
