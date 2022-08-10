@@ -1,4 +1,5 @@
 import { TrendingUpIcon, LockClosedIcon, ServerIcon, ShieldCheckIcon, SupportIcon, LightningBoltIcon} from '@heroicons/react/outline'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const features = [
     { name: 'LiteSpeed Servers', desc: 'We’re using LiteSpeed servers which helps you to get a super-fast website. It helps you cache and optimizes the site', icon: ServerIcon },

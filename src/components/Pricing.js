@@ -5,6 +5,9 @@ const starterFeatures = ['Powered By LiteSpeed', '1 Website', '3 GB SSD Storage'
 const growthFeatures = ['Powered By LiteSpeed', '3 Website', '8 GB SSD Storage','60 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates']
 const agencyFeatures = ['Powered By LiteSpeed', '10 Website', '12 GB SSD Storage','100 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates']
 
+const Price = [{Starter: 2799, Growth: 4999, Agency: 7999}]
+
+
 export default function Pricing () {
     return (
         <div className="bg-gray-900">
@@ -35,13 +38,15 @@ export default function Pricing () {
                           <h3 className="text-center text-2xl font-medium text-gray-900" id="tier-starter">
                             Starter
                           </h3>
+                          {Price.map((Price) => (
                           <div className="mt-4 flex items-center justify-center">
                             <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900">
                               <span className="mt-2 mr-2 text-4xl font-medium">₹</span>
-                              <span className="font-extrabold">2799</span>
+                              <span className="font-extrabold">{Price.Starter}</span>
                             </span>
                             <span className="text-xl font-medium text-gray-500">/year</span>
                           </div>
+                        ))}
                         </div>
                       </div>
                       <div className="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
@@ -88,13 +93,15 @@ export default function Pricing () {
                         <h3 className="text-center text-3xl font-semibold text-gray-900 sm:-mx-6" id="tier-growth">
                           Growth
                         </h3>
+                        {Price.map((Price) => (
                         <div className="mt-4 flex items-center justify-center">
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
                             <span className="mt-2 mr-2 text-4xl font-medium">₹</span>
-                            <span className="font-extrabold">4999</span>
+                            <span className="font-extrabold">{Price.Growth}</span>
                           </span>
                           <span className="text-2xl font-medium text-gray-500">/year</span>
                         </div>
+                        ))}
                       </div>
                     </div>
                     <div className="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
@@ -130,13 +137,15 @@ export default function Pricing () {
                           <h3 className="text-center text-2xl font-medium text-gray-900" id="tier-agency">
                             Agency
                           </h3>
+                          {Price.map((Price) => (
                           <div className="mt-4 flex items-center justify-center">
                             <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900">
                               <span className="mt-2 mr-2 text-4xl font-medium">₹</span>
-                              <span className="font-extrabold">7999</span>
+                              <span className="font-extrabold">{Price.Agency}</span>
                             </span>
                             <span className="text-xl font-medium text-gray-500">/year</span>
                           </div>
+                          ))}
                         </div>
                       </div>
                       <div className="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
