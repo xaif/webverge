@@ -17,7 +17,6 @@ theme: {
     colors: {
       'light-blue': colors.sky,
       cyan: colors.cyan,
-      'blue-gray': colors.blueGray,
     },
   },
 },
