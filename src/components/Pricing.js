@@ -2,10 +2,10 @@ import { CheckIcon } from '@heroicons/react/outline'
 
 
 const starterFeatures = ['Powered By LiteSpeed', '1 Website', '3 GB SSD Storage','20 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates']
-const growthFeatures = ['Powered By LiteSpeed', '3 Website', '8 GB SSD Storage','60 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates']
-const agencyFeatures = ['Powered By LiteSpeed', '10 Website', '12 GB SSD Storage','100 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates']
+const growthFeatures = ['Powered By LiteSpeed', '3 Website', '8 GB SSD Storage','60 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates', 'Google Page Speed Optimization', 'WhatsApp Priority Support']
+const agencyFeatures = ['Powered By LiteSpeed', '10 Website', '12 GB SSD Storage','100 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates', 'Google Page Speed Optimization']
 
-const Price = [{Starter: 2799, Growth: 4999, Agency: 7999}]
+const Price = [{Starter: 233, Growth: 499, Agency: 999}]
 
 
 export default function Pricing () {
@@ -44,7 +44,7 @@ export default function Pricing () {
                               <span className="mt-2 mr-2 text-4xl font-medium">₹</span>
                               <span className="font-extrabold">{Price.Starter}</span>
                             </span>
-                            <span className="text-xl font-medium text-gray-500">/year</span>
+                            <span className="text-xl font-medium text-gray-500">/month</span>
                           </div>
                         ))}
                         </div>
@@ -99,7 +99,7 @@ export default function Pricing () {
                             <span className="mt-2 mr-2 text-4xl font-medium">₹</span>
                             <span className="font-extrabold">{Price.Growth}</span>
                           </span>
-                          <span className="text-2xl font-medium text-gray-500">/year</span>
+                          <span className="text-2xl font-medium text-gray-500">/month</span>
                         </div>
                         ))}
                       </div>
@@ -143,7 +143,7 @@ export default function Pricing () {
                               <span className="mt-2 mr-2 text-4xl font-medium">₹</span>
                               <span className="font-extrabold">{Price.Agency}</span>
                             </span>
-                            <span className="text-xl font-medium text-gray-500">/year</span>
+                            <span className="text-xl font-medium text-gray-500">/month</span>
                           </div>
                           ))}
                         </div>

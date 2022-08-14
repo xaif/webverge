@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -7,15 +8,21 @@ module.exports = {
     "./components/**/*.{html,js}",
     "./pages/**/*.{html,js}"
 ],
-  theme: {
-    extend: {
-      colors: {
-        'blue-gray': colors.blueGray,
-      },
+
+theme: {
+  extend: {
+    fontFamily: {
+      sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+    },
+    colors: {
+      'light-blue': colors.sky,
+      cyan: colors.cyan,
+      'blue-gray': colors.blueGray,
     },
   },
+},
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
   ],
-}
+};

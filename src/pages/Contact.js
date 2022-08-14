@@ -448,7 +448,11 @@ export default function Contact() {
             </p>
           </div>
           <div className="mt-8 lg:mt-0 lg:ml-8">
-            <form className="sm:flex">
+            <form 
+            action="https://hook.us1.make.com/rcqch3mreqnnsiwzx3u2g5d7vgb895bh"
+            method="POST"
+            target="_blank"
+            className="sm:flex">
               <label htmlFor="email-address" className="sr-only">
                 Email address
               </label>
