@@ -3,10 +3,10 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "Blog", href: "#" },
+  { name: "About", href: "#" },
+  { name: "Reviews", href: "#" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -265,7 +265,7 @@ export default function Hero() {
                   <span className="sr-only">Watch our video to learn more</span>
                   <img
                     className="w-full"
-                    src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    src="https://unsplash.com/photos/m_HRfLhgABo/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8ODh8fHNlcnZlcnxlbnwwfHx8fDE2NzI2NzYzMTA&force=true"
                     alt=""
                   />
                   <div

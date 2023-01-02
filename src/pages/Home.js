@@ -7,6 +7,7 @@ import Logo from "../components/Logo";
 import Faq from "../components/Faq";
 import Stats from "../components/Stats";
 import Cta from "../components/Cta";
+import Footer from "../components/Footer"
 import { Helmet } from "react-helmet";
 
 const Home = () => {
@@ -50,7 +51,7 @@ const Home = () => {
       <Testimonial />
       <Faq />
       <Cta />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

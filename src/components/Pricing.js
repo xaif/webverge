@@ -5,7 +5,7 @@ const starterFeatures = ['Powered By LiteSpeed', '1 Website', '3 GB SSD Storage'
 const growthFeatures = ['Powered By LiteSpeed', '3 Website', '8 GB SSD Storage','60 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates', 'Google Page Speed Optimization', 'WhatsApp Priority Support']
 const agencyFeatures = ['Powered By LiteSpeed', '10 Website', '12 GB SSD Storage','100 GB Bandwidth', 'Free SSL Certificate', 'Auto WordPress Updates', 'Google Page Speed Optimization']
 
-const Price = [{Starter: 233, Growth: 499, Agency: 999}]
+const Price = [{Starter: 249, Growth: 499, Agency: 999}]
 
 
 export default function Pricing () {
