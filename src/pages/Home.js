@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/Hero";
+import Nhero from "../components/Nhero";
 import Features from "../components/Features";
 import Pricing from "../components/Pricing";
 import Testimonial from "../components/Testimonial";
@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-<title>Next-Gen Hosting Makes Your WordPress Fly
+<title>Next-Gen WordPress Cloud Hosting - WebVerge
 </title>
 <meta name="description" content="WebVerge is one of the Best Cheap web hosting in Mumbai. We provides the better web hosting at affordable prices.If you are looking for affordable hosting you can look at us."/>
 <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
@@ -43,7 +43,7 @@ const Home = () => {
 <meta name="twitter:data2" content="29 minutes" />
 <meta name="google-site-verification" content="eIMTS_uP5PtDv__BD94xFPvzzoU0AsKKMcTmlyTENqg" />
       </Helmet>
-      <Hero />
+      <Nhero />
       <Logo />
       <Features />
       <Pricing />
@@ -51,7 +51,7 @@ const Home = () => {
       <Testimonial />
       <Faq />
       <Cta />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
