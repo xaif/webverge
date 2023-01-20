@@ -3,22 +3,22 @@ import { ChevronDownIcon } from '@heroicons/react/outline'
 
 const faqs = [
     {
-      question: "What's the best thing about Ibad?????",
+      question: "There is no faq for now",
       answer:
         "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
     },
     {
-      question: "What's the best thing about Parth?????",
+      question: "There is no faq for now",
       answer:
         "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
     },
     {
-      question: "What's the best thing about jinal?????",
+      question: "There is no faq for now",
       answer:
         "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
     },
     {
-      question: "What's the best thing about Switzerland?????",
+      question: "There is no faq for now",
       answer:
         "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
     }
