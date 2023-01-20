@@ -1,4 +1,4 @@
-import iide from '../assets/IIDE_gray.svg'
+import iide_logo from '../assets/2023/images/IIDE_gray.svg'
 
 export default function Logo() {
     return (
@@ -6,10 +6,10 @@ export default function Logo() {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-            <img className="h-12" src={iide} alt="IIDE Logo" />
+            <img className="h-12" src={iide_logo} alt="IIDE Logo" />
             </div>
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={iide} alt="IIDE" />
+              <img className="h-12" src={iide_logo} alt="IIDE" />
             </div>
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
               <img className="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
